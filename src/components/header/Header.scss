@@ -1,0 +1,49 @@
+.title {
+    display: 'none',
+    // [theme.breakpoints.up('sm')]: {
+    //     display: 'block',
+    //   },
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.search {
+    position: relative;
+    border-radius: 5px;
+    background-color: rgba(243, 243, 243, 0.15);
+    &:hover {
+        background-color: rgba(243, 243, 243, 0.25);
+    }
+    margin-right: 10px;
+    margin-left: 0;
+    // width: 100%;
+    // [theme.breakpoints.up('sm')]: { marginLeft: theme.spacing(3), width: 'auto' }
+}
+
+.searchIcon {
+    padding: 5px;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputComponent {
+    color: inherit;
+    padding: 5px;
+    padding-left: 35px;
+    width: 100%;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh !important;
+}
